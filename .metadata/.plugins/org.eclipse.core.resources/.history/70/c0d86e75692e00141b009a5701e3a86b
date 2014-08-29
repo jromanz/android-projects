@@ -1,0 +1,62 @@
+package pe.demo.listaalumnos;
+
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.AdapterView.OnItemLongClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.ListView;
+import android.widget.Toast;
+
+public class ListaAlumnos extends ActionBarActivity {
+
+	private ListView listaAlumnos;
+	private Button boton;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.listade_alumnos);
+		
+		boton = findViewById(R.id.boton);
+		
+		String[] nombres = { "Hugo", "Paco", "Luis","Yo"};
+		listaAlumnos = (ListView) findViewById(R.id.lista);
+
+		int layout = android.R.layout.simple_list_item_1;
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+				ListaAlumnos.this, layout, nombres);
+
+		listaAlumnos.setAdapter(adapter);
+		
+		listaAlumnos.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> adapter, View view,
+					int position, long id) {
+				Toast.makeText(ListaAlumnos.this,
+						"Position selected: " + position, Toast.LENGTH_SHORT)
+						.show();
+			}
+
+		});
+
+		listaAlumnos.setOnItemLongClickListener(new OnItemLongClickListener() {
+
+			@Override
+			public boolean onItemLongClick(AdapterView<?> adapter, View view,
+					int position, long id) {
+				Toast.makeText(
+						ListaAlumnos.this,
+						"OnClick selected in position"
+								+ adapter.getItemIdAtPosition(position),
+						Toast.LENGTH_SHORT).show();
+				return false;
+			}
+
+		});
+	}
+
+}

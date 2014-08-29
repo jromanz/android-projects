@@ -1,0 +1,40 @@
+package pe.demo.registro.dao;
+
+import pe.demo.registro.modelo.Alumno;
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+public class AlumnoDAO extends SQLiteOpenHelper{
+
+	private static final String DATABASE = "RegistroApp";
+	private static final int VERSION = 1;
+
+	public AlumnoDAO(Context context) {
+		super(context, DATABASE, null, VERSION);
+	}
+
+	@Override
+	public void onCreate(SQLiteDatabase db) {
+		String dll = "CREATE TABLE "+"ALUMNO " +
+				"(id INTEGER PRIMARY KEY, "+
+				"nombre TEXT UNIQUE NOT NULL, "+
+				"telefono TEXT, "+
+				"direccion TEXT, "+
+				"site TEXT, "+
+				"nota REAL, "+
+				"foto TEXT, "+
+				");";
+		db.execSQL(dll);
+	}
+
+	@Override
+	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+		
+	}
+
+	public void guardar(Alumno alumno) {
+		
+	}
+
+}

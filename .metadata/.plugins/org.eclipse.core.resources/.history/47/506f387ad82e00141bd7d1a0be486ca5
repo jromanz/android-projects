@@ -1,0 +1,7 @@
+package pe.demo.listener;
+
+import android.view.View.OnClickListener;
+
+public class LinearLayoutListener implements OnClickListener{
+
+}

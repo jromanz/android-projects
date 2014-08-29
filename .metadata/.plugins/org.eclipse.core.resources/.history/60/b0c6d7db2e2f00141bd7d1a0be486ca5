@@ -1,0 +1,21 @@
+package pe.demo.registro.activity;
+
+import pe.demo.registro.R;
+import android.app.Activity;
+import android.os.Bundle;
+
+public class FormularioActivity extends Activity {
+
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_formulario);
+		String nombre = findViewById(R.id.txtNombre);
+		String site;
+		String direccion;
+		String
+	
+	
+	}
+}

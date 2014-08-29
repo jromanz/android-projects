@@ -1,0 +1,5 @@
+package pe.demo.modelo;
+
+public class Alumno {
+
+}

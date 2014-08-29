@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+	<ListView 
+	    	android:id="@+id/lista"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="fill_parent"
+	    >
+	</ListView>
+	<Button android:id="@+id/boton"
+	    android:layout_width="match_parent"
+	    android:layout_height="fill_parent"
+	    android:text="@+string/ir"
+	    />
+	<Button android:id="@+id/linearLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="fill_parent"
+	    android:text="@+string/linearLayout"
+	    />
+	<Button android:id="@+id/tableLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="fill_parent"
+	    android:text="@+string/tableLayout"
+	    />
+	<Button android:id="@+id/relativeLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="fill_parent"
+	    android:text="@+string/relativeLayout"
+	    />		
+	<Button android:id="@+id/frameLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="fill_parent"
+	    android:text="@+string/frameLayout"
+	    />		
+
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+package pe.demo.listaalumnos;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+public class Formulario extends ActionBarActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_formulario);
+		final EditText curso = (EditText) findViewById(R.id.curso);
+		
+		Button botonConfirmar = (Button) findViewById(R.id.botonConfirmar);
+		Button botonRetornar = (Button) findViewById(R.id.botonRetornar);
+		
+		botonConfirmar.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				String texto = curso.getText().toString();
+				Toast.makeText(Formulario.this, texto,
+						Toast.LENGTH_SHORT).show();
+				Log.i("Mi texto: ",texto);
+			}
+		});
+		
+		botonRetornar.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(Formulario.this,ListaAlumnos.class);
+				startActivity(intent);
+				finish();
+			}
+		});
+	}
+	
+}

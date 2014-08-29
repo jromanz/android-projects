@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+	
+   <LinearLayout 
+       android:orientation="horizontal"
+       android:layout_width="wrap_content"
+       android:layout_height="fill_parent"
+       >
+    
+    <Button
+        android:id="@+id/boton1Linear"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" 
+        android:text="@string/btn1Linear"
+        />
+
+    <Button
+        android:id="@+id/boton2Linear"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="@string/btn2Linear"
+         />
+
+    <Button
+        android:id="@+id/boton3Linear"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" 
+        android:text="@string/btn3Linear"
+        />
+	
+    <Button
+        android:id="@+id/botonRetornarLinear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:text="@string/btnRetornarLinear"
+        />
+    
+       
+   </LinearLayout>
+    
+</LinearLayout>

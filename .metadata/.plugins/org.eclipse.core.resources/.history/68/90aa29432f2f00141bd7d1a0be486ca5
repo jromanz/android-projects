@@ -1,0 +1,25 @@
+package pe.demo.registro.activity;
+
+import pe.demo.registro.R;
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.EditText;
+import android.widget.RatingBar;
+
+public class FormularioActivity extends Activity {
+
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_formulario);
+		
+		EditText nombre = (EditText)findViewById(R.id.txtNombre);
+		EditText site = (EditText)findViewById(R.id.txtSite);
+		EditText direccion = (EditText)findViewById(R.id.txtDireccion);
+		EditText telefono = (EditText)findViewById(R.id.txtTelefono);
+		RatingBar nota = (RatingBar)findViewById(R.id.rbNotas);
+	
+	
+	}
+}

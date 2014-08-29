@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ListaAlumnos</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_formulario">Registro Alumnos</string>
+    <string name="explica">Tu amigo explica!</string>
+    <string name="btnConfirmar">Confirmar</string>
+    <string name="btnRetornar">Retornar</string>
+    <string name="ir">Ir Registro</string>
+    <string name="title_activity_linear_layout">LinearLayoutActivity</string>
+    <string name="linearLayout">Linear Layout</string>
+    <string name="btn1Linear">Boton 1</string>
+    <string name="btn2Linear">Boton 2</string>
+    <string name="btn3Linear">Boton 3</string>
+    <string name="btnRetornarLinear">Retornar</string>
+    <string name="title_activity_table_layout">TableLayoutActivity</string>
+	<string name="tableLayout">TableLayoutActivity</string>
+	<string name="btnRetornarTable">Retornar</string>
+</resources>

@@ -1,0 +1,86 @@
+package pe.demo.registro.activity;
+
+import java.util.List;
+
+import pe.demo.registro.R;
+import pe.demo.registro.dao.AlumnoDAO;
+import pe.demo.registro.modelo.Alumno;
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.AdapterView.OnItemLongClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.ListView;
+import android.widget.Toast;
+
+public class ListadoAlumnosActivity extends Activity {
+	
+	private Button agregarUsuarios;
+	private ListView listaAlumnos;
+	
+	@Override
+	protected void onResume() {
+		super.onResume();
+        AlumnoDAO alumnoDAO = new AlumnoDAO(this);
+        List<Alumno> alumnos = alumnoDAO.getLista();
+        alumnoDAO.close();
+        int layout = android.R.layout.simple_list_item_1;
+        ArrayAdapter<Alumno> adapter = new ArrayAdapter<Alumno>(
+        		ListadoAlumnosActivity.this, layout, alumnos);
+
+        listaAlumnos.setAdapter(adapter);
+	}
+	
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_listado_alumnos);
+        
+        
+		agregarUsuarios = (Button) findViewById(R.id.agregarUsuarios);
+		listaAlumnos = (ListView) findViewById(R.id.lista);
+
+
+
+		listaAlumnos.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> adapter, View view,
+					int position, long id) {
+				Toast.makeText(ListadoAlumnosActivity.this,
+						"Position selected: " + position, Toast.LENGTH_SHORT)
+						.show();
+			}
+
+		});
+
+		listaAlumnos.setOnItemLongClickListener(new OnItemLongClickListener() {
+
+			@Override
+			public boolean onItemLongClick(AdapterView<?> adapter, View view,
+					int position, long id) {
+				Toast.makeText(
+						ListadoAlumnosActivity.this,
+						"OnClick selected in position"
+								+ adapter.getItemIdAtPosition(position),
+						Toast.LENGTH_SHORT).show();
+				return false;
+			}
+
+		});
+
+		agregarUsuarios.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(ListadoAlumnosActivity.this, FormularioActivity.class);
+				startActivity(intent);
+			}
+		});
+        
+    }
+}

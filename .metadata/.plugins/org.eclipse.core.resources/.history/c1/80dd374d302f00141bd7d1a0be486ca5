@@ -1,0 +1,17 @@
+package pe.demo.registro.helper;
+
+import pe.demo.registro.R;
+import pe.demo.registro.activity.FormularioActivity;
+import android.widget.EditText;
+import android.widget.RatingBar;
+
+public class FormularioHelper {
+	
+	public FormularioHelper(FormularioActivity activity) {
+		EditText nombre = (EditText)activity.findViewById(R.id.txtNombre);
+		EditText site = (EditText)activity.findViewById(R.id.txtSite);
+		EditText direccion = (EditText)activity.findViewById(R.id.txtDireccion);
+		EditText telefono = (EditText)activity.findViewById(R.id.txtTelefono);
+		RatingBar nota = (RatingBar)activity.findViewById(R.id.rbNotas);
+	}
+}

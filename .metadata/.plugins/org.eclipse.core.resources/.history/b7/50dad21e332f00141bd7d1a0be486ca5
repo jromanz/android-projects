@@ -1,0 +1,7 @@
+package pe.demo.registro.dao;
+
+import android.database.sqlite.SQLiteOpenHelper;
+
+public class AlumnoDAO extends SQLiteOpenHelper{
+
+}

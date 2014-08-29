@@ -1,0 +1,19 @@
+package pe.demo.registro.activity;
+
+import pe.demo.registro.R;
+import pe.demo.registro.helper.FormularioHelper;
+import android.app.Activity;
+import android.os.Bundle;
+
+public class FormularioActivity extends Activity {
+	
+	private FormularioHelper helper;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_formulario);
+		
+		
+	}
+}

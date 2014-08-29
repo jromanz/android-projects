@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.demo.holamundo.R.id"/>
+<fullyQualifiedTypeName name="pe.app.registroaplicacion.R.id"/>
+<fullyQualifiedTypeName name="android.widget.ListView"/>
+<fullyQualifiedTypeName name="pe.app.registroaplicacion.ListaAlumnos"/>
+<fullyQualifiedTypeName name="android.widget.Adapter"/>
+<fullyQualifiedTypeName name="android.widget.ArrayAdapter"/>
+<fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="android.R.id"/>
+<fullyQualifiedTypeName name="android.R.layout"/>
+<fullyQualifiedTypeName name="android.widget.AdapterView.OnItemClickListener"/>
+<fullyQualifiedTypeName name="android.widget.AdapterView.OnItemLongClickListener"/>
+<fullyQualifiedTypeName name="pe.demo.listaalumnos.ListaAlumnos"/>
+<fullyQualifiedTypeName name="android.widget.Button"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="android.app.AlertDialog"/>
+<fullyQualifiedTypeName name="android.app.AlertDialog.Builder"/>
+<fullyQualifiedTypeName name="pe.demo.listener.LinearLayoutListener"/>
+<fullyQualifiedTypeName name="pe.demo.listaalumnos.LinearLayoutActivity"/>
+<fullyQualifiedTypeName name="pe.demo.listaalumnos.LinearLayoutActivity.ListaAlumnosListener"/>
+<fullyQualifiedTypeName name="pe.demo.listaalumnos.LinearLayoutActivity.LinearLayoutActivityListener"/>
+<fullyQualifiedTypeName name="pe.demo.listaalumnos.R.id"/>
+<fullyQualifiedTypeName name="pe.demo.listaalumnos.ListaAlumnos.TableLayoutListener"/>
+<fullyQualifiedTypeName name="pe.demo.listaalumnos.ListaAlumnos.FrameLayoutListener"/>
+<fullyQualifiedTypeName name="pe.demo.registro.activity.ListadoAlumnosActivity"/>
+<fullyQualifiedTypeName name="pe.demo.registro.FormularioActivity"/>
+<fullyQualifiedTypeName name="android.widget.RatingBar"/>
+<fullyQualifiedTypeName name="pe.demo.registro.modelo.Alumno"/>
+<fullyQualifiedTypeName name="pe.demo.registro.helper.FormularioHelper"/>
+<fullyQualifiedTypeName name="pe.demo.registro.R.id"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="pe.demo.registro.activity.FormularioActivity.BtnGrabarListener"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="pe.demo.registro.activity.FormularioActivity"/>
+<fullyQualifiedTypeName name="android.database.sqlite.SQLiteOpenHelper"/>
+<fullyQualifiedTypeName name="android.content.ContentValues"/>
+<fullyQualifiedTypeName name="pe.demo.registro.dao.AlumnoDAO"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+</qualifiedTypeNameHistroy>

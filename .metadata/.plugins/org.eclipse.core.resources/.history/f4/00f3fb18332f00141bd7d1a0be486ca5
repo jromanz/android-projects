@@ -1,0 +1,5 @@
+package pe.demo.registro.dao;
+
+public class AlumnoDAO {
+
+}

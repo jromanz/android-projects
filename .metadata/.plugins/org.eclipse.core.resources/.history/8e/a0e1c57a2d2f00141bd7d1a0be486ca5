@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RegistroAlumnos</string>
+    <string name="lblNombre">Nombre:</string>
+    <string name="lblNotas">Nota:</string>
+    <string name="lblSite">Site:</string>
+    <string name="lblDireccion">Dirección:</string>
+    <string name="lblTelefono">Telefono:</string>
+    <string name="ir">Agregar usuarios</string>
+    <string name="title_activity_formulario">FormularioActivity</string>
+
+</resources>

@@ -1,0 +1,11 @@
+package pe.demo.modelo;
+
+public class Alumno {
+	private Long id;
+	private String nombre;
+	private String site;
+	private String direccion;
+	private String telefono;
+	private Double nota;
+	private String foto;
+}
